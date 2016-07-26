@@ -10,5 +10,6 @@ get '/' do
 end
 
 get '/pokemons' do
-  "The art of redirection"
+  # "The art of redirection"
+  erb :"pokemons/index"
 end
