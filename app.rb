@@ -15,7 +15,7 @@ get '/pokemons' do
 end
 
 get '/pokemons/new' do
-  "New stuff goes here"
+  erb :"pokemons/new"
 end
 
 get '/pokemons/:id' do
