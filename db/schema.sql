@@ -1,4 +1,4 @@
-CREATE TABLE pokemon(
+CREATE TABLE pokemons(
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
   cp INT NOT NULL,
