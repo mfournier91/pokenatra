@@ -3,6 +3,6 @@ require "active_record"
 require "pry"
 
 ActiveRecord::Base.establish_connection(
-  :adapter => "postgesql",
+  :adapter => "postgresql",
   :database => "pokemon"
 )
