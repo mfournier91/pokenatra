@@ -28,7 +28,7 @@ post '/pokemons' do
   redirect "/pokemons/#{@pokemon.id}"
 end
 
-get 'pokemons/:id/edit' do
+get '/pokemons/:id/edit' do
   @pokemon = Pokemon.find(params[:id])
   erb :"pokemons/edit"
 end
