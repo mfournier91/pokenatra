@@ -1,1 +1,8 @@
-<p>Index</p>
+<% @all_pokemons.each do |pokemon| %>
+  <h2><a href="/pokemons/<%= pokemon.id%>"><%= pokemon.name %></a></h2>
+  <img src="<%= pokemon.img_url%>" alt="<%= pokemon.name%>" />
+  <!-- <ul>
+    <li>CP: <%= pokemon.cp%></li>
+    <li>Type: <%= pokemon.poke_type%></li>
+  </ul> -->
+  <% end %>
