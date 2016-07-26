@@ -10,6 +10,11 @@ get '/' do
 end
 
 get '/pokemons' do
-  # "The art of redirection"
+  @all_pokemons = Pokemon.all
   erb :"pokemons/index"
+end
+
+get '/pokemons/:id' do
+  @pokemon = Pokemon.find(params[:id])
+  erb :"pokemons/show"
 end
