@@ -14,6 +14,10 @@ get '/pokemons' do
   erb :"pokemons/index"
 end
 
+get '/pokemons/new' do
+  "New stuff goes here"
+end
+
 get '/pokemons/:id' do
   @pokemon = Pokemon.find(params[:id])
   erb :"pokemons/show"
