@@ -1,0 +1,7 @@
+<% @all_trainers.each do |trainer|%>
+  <div class="pokemon">
+   <h2><a href="/trainers/<%= trainer.id%>"><%= trainer.name%></a></h2>
+   <img src="<%= trainer.img_url%>" alt="<%= trainer.name%>" />
+ </div>
+ <% end %>
+ <h3><a href="trainers/new">Create a new Trainer</a></h3>

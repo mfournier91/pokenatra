@@ -4,6 +4,7 @@ require 'active_record'
 
 require_relative 'db/connection'
 require_relative 'models/pokemon'
+require_relative 'models/trainer'
 
 get '/' do
   redirect "/pokemons"
@@ -43,4 +44,9 @@ delete '/pokemons/:id' do
   pokemon = Pokemon.find(params[:id])
   pokemon.destroy
   redirect '/pokemons'
+end
+
+get '/trainers' do
+  @all_trainers = Trainer.all
+  erb :"trainers/index"
 end
