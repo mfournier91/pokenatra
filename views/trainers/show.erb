@@ -1,0 +1,9 @@
+<div class="pokemon">
+
+  <h2><%= @trainer.name%></h2>
+  <img src="<%= @trainer.img_url%>" alt="<%= @trainer.name%>" />
+    <ul>
+      <li>Level : <%= @trainer.level%></li>
+    </ul>
+
+    <h3><a href="/trainers/<%= @trainer.id%>/edit">Edit this trainer.</a></h3>
