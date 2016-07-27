@@ -10,3 +10,10 @@
   <input name="trainer[img_url]" value="<%= @trainer.img_url%>">
   <input type="submit" value="Update">
 </form>
+
+<h3>DELETE Trainer</h3>
+<form action="/trainers/<%= @trainer.id%>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+
+</form>

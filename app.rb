@@ -75,3 +75,9 @@ put '/trainers/:id' do
   @trainer.update(params[:trainer])
   redirect "/trainers/#{@trainer.id}"
 end
+
+delete '/trainers/:id' do
+  @trainer = Trainer.find(params[:id])
+  @trainer.destroy
+  redirect '/trainers'
+end
